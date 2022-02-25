@@ -11,7 +11,16 @@
 </head>
 <body>
     <script>
-        document.write(Date());
+
+
+        var currentDate = new Date();
+        var month = currentDate.getMonth();
+        var day = currentDate.getDate();
+        var year = currentDate.getFullYear();
+        var fullDate = month + "/" + day + "/" + year;
+        document.write(fullDate);
+        /*psst, this might break the clock if you don't do full screen*/
+
     </script>
     <div class="clock">
         <div class="hand hour" data-hour-hand=""></div>
